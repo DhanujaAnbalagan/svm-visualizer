@@ -4,7 +4,7 @@ import { Brain, Code, Zap, Target, BookOpen, Users } from "lucide-react";
 
 const About = () => {
   const technologies = [
-    "React", "TypeScript", "Tailwind CSS", "Canvas API", "Vite"
+    "React", "Javascript", "HTML" , "JSON" ,"Vite" , "Tailwind CSS"
   ];
 
   const features = [
@@ -91,8 +91,8 @@ const About = () => {
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Frontend</h3>
                 <p className="text-sm text-muted-foreground">
-                  React with TypeScript for type safety, Tailwind CSS for responsive design, 
-                  and Canvas API for interactive graphics.
+                 React for building the user interface, Vite for fast development, and Tailwind CSS for styling.
+                 
                 </p>
               </div>
               <div>
