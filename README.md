@@ -1,148 +1,117 @@
-🧠 Interactive SVM Visualizer
+# 🧠 Interactive SVM Visualizer
 
-An interactive Support Vector Machine (SVM) visualizer built with React, JavaScript, HTML Canvas, and Tailwind CSS.
-This tool helps visualize how Linear, Polynomial, and RBF kernels classify data by showing decision boundaries, support vectors, and background gradients dynamically.
+An interactive Support Vector Machine (SVM) visualizer built using React, HTML Canvas, and Tailwind CSS to demonstrate how different kernels classify data in real time.
 
+This tool helps students and developers understand how Linear, Polynomial, and RBF kernels form decision boundaries and identify support vectors.
 
-🚀 Features
+---
 
-🎨 Interactive Canvas – Add, move, or remove data points with mouse clicks.
+## 🚀 Features
 
-⚙️ Three Kernels – Linear, Polynomial, and RBF (Radial Basis Function).
+- Interactive canvas for adding and removing data points
+- Real-time decision boundary visualization
+- Three kernel options:
+  - Linear
+  - Polynomial
+  - RBF
+- Visual differentiation of support vectors
+- Gradient-based decision region rendering
+- Export current dataset as JSON
+- Canvas reset functionality
+- Toast notifications for user actions
 
-🔍 Real-time Classification – Visualize decision boundaries and support vectors instantly.
+---
 
-🧩 Custom Visual Differentiation
+## 🛠 Tech Stack
 
-Linear: solid boundary and circular support vectors.
+| Technology | Purpose |
+|----------|--------|
+| ReactJS | UI framework |
+| JavaScript (ES6) | SVM logic |
+| HTML Canvas API | Visualization rendering |
+| Tailwind CSS | Styling |
+| Lucide React | Icons |
+| Sonner | Notifications |
+| ml-svm | SVM computation |
+| Vite | Build tool |
 
-Polynomial: soft curved gradient with square vectors.
+---
 
-RBF: smooth radial gradient with triangular support vectors.
+## 🧩 Project Structure
 
-💾 Export and Clear – Save current state as JSON or reset the canvas.
-
-💬 Toast Notifications – Feedback for every user action using sonner.
-
-⚡ Built using Vite for lightning-fast builds.
-
-
-🛠️ Tech Stack
-Technology	Purpose
-ReactJS	UI framework for component-based structure
-JavaScript (ES6)	Core logic for SVM computation
-HTML Canvas API	Drawing points, grids, and decision boundaries
-Tailwind CSS	Styling for modern UI
-Lucide React	Icons for actions
-Sonner	Notification system
-ml-svm	Lightweight JavaScript SVM library
-Vite	Development environment and bundler
-
-
-🧩 Project Structure
-svm-visualizer/
-├── src/
-│   ├── components/
-│   │   ├── ui/               
-│   │   └── svm/
-│   │       └── SVMCanvas.jsx  
-│   │   └── utils.js           
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── index.css
-│   └── vite.config.js
-├── public/
-│   
-├── package.json
-└── README.md
+<img width="326" height="419" alt="image" src="https://github.com/user-attachments/assets/eb3fbd96-156e-46c7-8f47-58e27f569eaa" />
 
 
+---
 
-⚙️ Installation & Setup
+## ⚙️ Installation
 
-Clone this repository
+Clone the repository:
 
 git clone https://github.com/DhanujaAnbalagan/svm-visualizer.git
+
 cd svm-visualizer
 
+Install dependencies:
 
-Install dependencies
+npm instal
 
-npm install
-
-Run the app
+Run the application:
 
 npm run dev
 
 
-🧠 How It Works
+---
 
-Add Data Points:
+## 🧠 How It Works
 
-Click on the canvas to add a point.
+### Add Data Points
+Click on the canvas to add training samples.
 
-Toggle between Class A and Class B using the buttons.
+Toggle between Class A and Class B using controls.
 
-Select Kernel:
+---
 
-Choose one of the three kernels: Linear, Polynomial, or RBF.
+### Train the Model
+Click **Train SVM** to compute:
+- decision boundary
+- support vectors
+- classification regions
 
-Train the Model:
+The application uses the `ml-svm` library internally.
 
-Click “Train SVM” to compute the boundary.
+---
 
-The app uses ml-svm to calculate decision functions.
+### Kernel Visualization
 
-Visualize Results:
+| Kernel | Decision Boundary | Support Vector Shape | Gradient Style |
+|-------|------------------|----------------------|---------------|
+| Linear | Straight line | Circle | Uniform |
+| Polynomial | Curved | Square | Smooth gradient |
+| RBF | Soft radial | Triangle | Radial gradient |
 
-The background color represents class confidence.
+---
 
-Support vectors are marked with unique shapes for each kernel.
+## 📈 Learning Outcomes
 
-Curved and radial gradients show non-linear decision regions.
+This project demonstrates:
 
-Export Results:
+- Support Vector Machine classification
+- Kernel-based learning
+- Real-time visualization using Canvas
+- React state management
+- Gradient-based classification rendering
 
-Download a JSON file of current data points, kernel type, and SVM info.
+---
 
-🎨 Kernel Visualization
-Kernel	Decision Boundary	Support Vector Shape	Gradient Style
-Linear	Solid straight line	Circle	Uniform color
-Polynomial	Dashed curved line	Square	Smooth curved gradient
-RBF	Dotted soft curve	Triangle	Radial gradient
+## 🔮 Future Improvements
 
+- Multi-class classification
+- Dynamic hyperparameter tuning
+- 3D decision surface visualization
+- GPU/WebAssembly acceleration
 
+---
 
-🧠 Technical Concepts Used
-
-Support Vector Machines (SVM): Finds the optimal hyperplane that separates two classes.
-
-Kernel Trick: Transforms data into higher-dimensional space to make it linearly separable.
-
-Canvas API: Draws and updates visualization efficiently in real-time.
-
-React Hooks: Manages canvas state and interactions.
-
-Gradient Visualization: Uses pixel-level classification scores to render smooth decision regions.
-
-
-📈 Learning Outcomes
-
-Understanding of SVM and kernel-based classification.
-
-Implementation of real-time ML visualization using frontend-only tech.
-
-Integration of React with Canvas API for dynamic graphics.
-
-Improved grasp of gradient-based visualization techniques.
-
-
-🧩 Future Enhancements
-
-Add multi-class classification support.
-
-Implement dynamic parameter tuning for C and gamma values.
-
-Include 3D visualization of decision surfaces.
-
-Optimize for larger datasets using WebAssembly or GPU acceleration.
+## Author
+Dhanuja Anbalagan
